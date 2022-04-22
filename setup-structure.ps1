@@ -10,7 +10,7 @@ $token = Read-Host -Prompt "Choose a short about-3-letter token that shall repre
 $token = $token.ToUpper()
 
 Write-Host "  - renaming module file"
-Rename-Item .\module\Modulename.ps1 "$modulename.psm1"
+Rename-Item .\module\Modulename.psm1 "$modulename.psm1"
 Write-Host "  - renaming module folder"
 Rename-Item .\module $modulename
 
