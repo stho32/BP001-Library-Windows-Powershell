@@ -13,7 +13,7 @@
     param (
         [Parameter(Mandatory=$true)]
         [string]$Message,
-        [ValidationSet("Information", "Error", "Warning", "Heading")]
+        [ValidateSet("Information", "Error", "Warning", "Heading")]
         [string]$Type = "Information",
         [int]$IndentationLevel = 0
     )
@@ -31,6 +31,6 @@
         $timestamp = (Get-Date).ToString("dd.MM.yyyy HH:mm:ss")
         $indentation = " " * $IndentationLevel
 
-        Write-Host "$indentation- $timestamp $message" -ForegroundColor $color -BackgroundColor $backgroundColor
+        Write-Host "$indentation- $timestamp [$Type] $message" -ForegroundColor $color -BackgroundColor $backgroundColor
     }
 }
