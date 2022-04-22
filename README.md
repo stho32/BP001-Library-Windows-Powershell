@@ -9,6 +9,7 @@ Base Template for a windows based library in powershell
 ## Get Started
 
 - From a powershell prompt start `setup-structure.ps1` . It will ask you for the necessary parameters.
+- The script will rename all module files so your new module looks nice
 
 ## Loading your new module
 
