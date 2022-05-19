@@ -6,6 +6,6 @@
 $ErrorActionPreference = "Stop"
 
 Remove-Module Modulename*
-Import-Module ..\module\Modulename.ps1
+Import-Module ..\module\Modulename.psm1
 
 Write-LogToScreen "Hello World" -Type Warning
