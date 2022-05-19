@@ -1,3 +1,4 @@
+Push-Location $PSScriptRoot
 . "..\..\module\Math\Get-Sum.ps1"
 
 Describe 'Get-Sum' {
@@ -6,3 +7,4 @@ Describe 'Get-Sum' {
         $sum | Should Be 4
     }
 }
+Pop-Location $PSScriptRoot
